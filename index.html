@@ -3,300 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Magic World Almaty — создаём волшебство вместе с вами">
     <title>Magic World Almaty</title>
-    <meta name="description" content="Magic World Almaty — мир ярких праздников и незабываемых впечатлений.">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- ЗВЁЗДНЫЙ ФОН -->
-    <div class="stars"></div>
+<header class="header">
+    <div class="header-content">
 
-    <!-- ШАПКА -->
-    <header class="header">
-        <div class="container header-content">
+        <a href="index.html" class="logo">MAGIC WORLD</a>
 
-            <a href="#home" class="logo">
-                MAGIC WORLD
+        <nav class="nav">
+            <a href="index.html" class="active" data-ru="Главная" data-kz="Басты бет">Главная</a>
+            <a href="services.html" data-ru="Услуги" data-kz="Қызметтер">Услуги</a>
+            <a href="programs.html" data-ru="Программы" data-kz="Бағдарламалар">Программы</a>
+            <a href="prices.html" data-ru="Прайс" data-kz="Бағалар">Прайс</a>
+            <a href="about.html" data-ru="О нас" data-kz="Біз туралы">О нас</a>
+            <a href="contacts.html" data-ru="Контакты" data-kz="Байланыс">Контакты</a>
+        </nav>
+
+        <div class="language-switch">
+            <button class="lang-btn active" data-lang="ru">RU</button>
+            <button class="lang-btn" data-lang="kz">KZ</button>
+        </div>
+
+    </div>
+</header>
+
+<main>
+
+    <section class="hero" id="home">
+
+        <div class="hero-stars">
+            <span>✦</span>
+            <span>✧</span>
+            <span>✦</span>
+            <span>✧</span>
+            <span>✦</span>
+        </div>
+
+        <div class="hero-content">
+
+            <p class="hero-label"
+               data-ru="МИР ПРАЗДНИКА И ВОЛШЕБСТВА"
+               data-kz="МЕРЕКЕ МЕН СИҚЫР ӘЛЕМІ">
+               МИР ПРАЗДНИКА И ВОЛШЕБСТВА
+            </p>
+
+            <h1 data-ru="Создаём волшебство вместе с вами"
+                data-kz="Сізбен бірге сиқыр жасаймыз">
+                Создаём волшебство вместе с вами
+            </h1>
+
+            <p class="hero-description"
+               data-ru="Яркие эмоции, незабываемые моменты и настоящая атмосфера праздника."
+               data-kz="Жарқын эмоциялар, ұмытылмас сәттер және мерекенің ерекше атмосферасы.">
+               Яркие эмоции, незабываемые моменты и настоящая атмосфера праздника.
+            </p>
+
+            <a href="services.html" class="hero-button"
+               data-ru="Открыть наши услуги"
+               data-kz="Қызметтерімізді көру">
+               Открыть наши услуги
             </a>
 
-            <nav class="nav">
-                <a href="#home" data-ru="Главная" data-kz="Басты бет">Главная</a>
-                <a href="#services" data-ru="Услуги" data-kz="Қызметтер">Услуги</a>
-                <a href="#programs" data-ru="Программы" data-kz="Бағдарламалар">Программы</a>
-                <a href="#prices" data-ru="Прайс" data-kz="Бағалар">Прайс</a>
-                <a href="#about" data-ru="О нас" data-kz="Біз туралы">О нас</a>
-            </nav>
-
-            <div class="language-switch">
-                <button class="lang-btn active" data-lang="ru">РУС</button>
-                <button class="lang-btn" data-lang="kz">ҚАЗ</button>
-            </div>
-
         </div>
-    </header>
 
+        <div class="hero-decoration">✧</div>
 
-    <!-- ГЛАВНАЯ -->
-    <main>
+    </section>
 
-        <section class="hero" id="home">
-            <div class="container hero-content">
+    <section class="welcome">
 
-                <p class="hero-label"
-                   data-ru="МИР ЯРКИХ ВПЕЧАТЛЕНИЙ"
-                   data-kz="ЖАРҚЫН ӘСЕРЛЕР ӘЛЕМІ">
-                    МИР ЯРКИХ ВПЕЧАТЛЕНИЙ
-                </p>
+        <p class="section-label"
+           data-ru="ДОБРО ПОЖАЛОВАТЬ"
+           data-kz="ҚОШ КЕЛДІҢІЗ">
+           ДОБРО ПОЖАЛОВАТЬ
+        </p>
 
-                <h1>
-                    <span data-ru="Создаём" data-kz="Біз">Создаём</span>
-                    <span class="gradient-text"
-                          data-ru="волшебство"
-                          data-kz="ғажайып">
-                        волшебство
-                    </span>
-                    <br>
-                    <span data-ru="вместе с вами"
-                          data-kz="сізбен бірге">
-                        вместе с вами
-                    </span>
-                </h1>
+        <h2 data-ru="Добро пожаловать в Magic World"
+            data-kz="Magic World әлеміне қош келдіңіз">
+            Добро пожаловать в Magic World
+        </h2>
 
-                <p class="hero-description"
-                   data-ru="Праздники, эмоции и моменты, которые хочется запомнить."
-                   data-kz="Есте қалатын мерекелер, эмоциялар мен сәттер.">
-                    Праздники, эмоции и моменты, которые хочется запомнить.
-                </p>
+        <p data-ru="Мы создаём атмосферу, которая превращает обычные события в особенные воспоминания."
+           data-kz="Біз қарапайым сәттерді ерекше естеліктерге айналдыратын атмосфера жасаймыз.">
+           Мы создаём атмосферу, которая превращает обычные события в особенные воспоминания.
+        </p>
 
-                <a href="#services" class="main-button"
-                   data-ru="Открыть мир Magic World"
-                   data-kz="Magic World әлемін ашу">
-                    Открыть мир Magic World
-                </a>
+    </section>
 
-            </div>
-        </section>
+    <section class="quick-links">
 
+        <a href="services.html" class="quick-card">
+            <span>✦</span>
+            <h3 data-ru="Наши услуги" data-kz="Қызметтеріміз">Наши услуги</h3>
+            <p data-ru="Узнайте, что мы предлагаем" data-kz="Біз ұсынатын қызметтер">Узнайте, что мы предлагаем</p>
+        </a>
 
-        <!-- УСЛУГИ -->
-        <section class="section" id="services">
-            <div class="container">
+        <a href="programs.html" class="quick-card">
+            <span>✧</span>
+            <h3 data-ru="Программы" data-kz="Бағдарламалар">Программы</h3>
+            <p data-ru="Откройте мир наших программ" data-kz="Бағдарламаларымызды көріңіз">Откройте мир наших программ</p>
+        </a>
 
-                <div class="section-heading">
-                    <p class="section-label"
-                       data-ru="ЧТО МЫ ДЕЛАЕМ"
-                       data-kz="БІЗ НЕ ІСТЕЙМІЗ">
-                        ЧТО МЫ ДЕЛАЕМ
-                    </p>
+        <a href="prices.html" class="quick-card">
+            <span>✦</span>
+            <h3 data-ru="Наш прайс" data-kz="Бағаларымыз">Наш прайс</h3>
+            <p data-ru="Посмотрите наши предложения" data-kz="Ұсыныстарымызды қараңыз">Посмотрите наши предложения</p>
+        </a>
 
-                    <h2 data-ru="Наши услуги"
-                        data-kz="Біздің қызметтер">
-                        Наши услуги
-                    </h2>
+    </section>
 
-                    <p data-ru="Создаём атмосферу настоящего праздника."
-                       data-kz="Нағыз мерекелік көңіл күй сыйлаймыз.">
-                        Создаём атмосферу настоящего праздника.
-                    </p>
-                </div>
+</main>
 
-                <div class="services-grid">
+<footer class="footer">
+    <p>© 2026 Magic World Almaty</p>
+    <a href="https://www.instagram.com/magic_world_almaty/" target="_blank" rel="noopener noreferrer">
+        Instagram
+    </a>
+</footer>
 
-                    <div class="service-card">
-                        <div class="card-icon">✨</div>
-                        <h3 data-ru="Аниматоры" data-kz="Аниматорлар">Аниматоры</h3>
-                        <p data-ru="Яркие персонажи и весёлое настроение."
-                           data-kz="Жарқын кейіпкерлер мен көтеріңкі көңіл күй.">
-                            Яркие персонажи и весёлое настроение.
-                        </p>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="card-icon">🎭</div>
-                        <h3 data-ru="Шоу-программы" data-kz="Шоу бағдарламалар">Шоу-программы</h3>
-                        <p data-ru="Необычные выступления и впечатления."
-                           data-kz="Ерекше қойылымдар мен әсерлер.">
-                            Необычные выступления и впечатления.
-                        </p>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="card-icon">🌟</div>
-                        <h3 data-ru="Организация праздников"
-                            data-kz="Мерекелерді ұйымдастыру">
-                            Организация праздников
-                        </h3>
-                        <p data-ru="Помогаем создавать особенные события."
-                           data-kz="Ерекше іс-шаралар ұйымдастыруға көмектесеміз.">
-                            Помогаем создавать особенные события.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ПРОГРАММЫ -->
-        <section class="section programs-section" id="programs">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="section-label"
-                       data-ru="ВПЕЧАТЛЕНИЯ"
-                       data-kz="ӘСЕРЛЕР">
-                        ВПЕЧАТЛЕНИЯ
-                    </p>
-
-                    <h2 data-ru="Наши программы"
-                        data-kz="Біздің бағдарламалар">
-                        Наши программы
-                    </h2>
-                </div>
-
-                <div class="programs-grid">
-
-                    <div class="program-card">
-                        <h3 data-ru="Интерактивные программы"
-                            data-kz="Интерактивті бағдарламалар">
-                            Интерактивные программы
-                        </h3>
-                    </div>
-
-                    <div class="program-card">
-                        <h3 data-ru="Тематические выступления"
-                            data-kz="Тақырыптық қойылымдар">
-                            Тематические выступления
-                        </h3>
-                    </div>
-
-                    <div class="program-card">
-                        <h3 data-ru="Праздничные шоу"
-                            data-kz="Мерекелік шоулар">
-                            Праздничные шоу
-                        </h3>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ПРАЙС -->
-        <section class="section price-section" id="prices">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="section-label"
-                       data-ru="НАШИ ПРЕДЛОЖЕНИЯ"
-                       data-kz="БІЗДІҢ ҰСЫНЫСТАР">
-                        НАШИ ПРЕДЛОЖЕНИЯ
-                    </p>
-
-                    <h2 data-ru="Стоимость программ"
-                        data-kz="Бағдарламалардың бағасы">
-                        Стоимость программ
-                    </h2>
-
-                    <p data-ru="Актуальный прайс скоро появится на сайте."
-                       data-kz="Жаңартылған бағалар жақында сайтта жарияланады.">
-                        Актуальный прайс скоро появится на сайте.
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- О НАС -->
-        <section class="section about-section" id="about">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="section-label"
-                       data-ru="НЕМНОГО О НАС"
-                       data-kz="БІЗ ТУРАЛЫ">
-                        НЕМНОГО О НАС
-                    </p>
-
-                    <h2 data-ru="Magic World Almaty"
-                        data-kz="Magic World Almaty">
-                        Magic World Almaty
-                    </h2>
-
-                    <p data-ru="Мы создаём атмосферу праздника, дарим эмоции и превращаем обычные события в особенные моменты."
-                       data-kz="Біз мерекелік көңіл күй сыйлап, қарапайым сәттерді ерекше естеліктерге айналдырамыз.">
-                        Мы создаём атмосферу праздника, дарим эмоции и превращаем обычные события в особенные моменты.
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- КАК МЫ РАБОТАЕМ -->
-        <section class="section steps-section">
-            <div class="container">
-
-                <div class="section-heading">
-                    <h2 data-ru="Как это работает?"
-                        data-kz="Бұл қалай жұмыс істейді?">
-                        Как это работает?
-                    </h2>
-                </div>
-
-                <div class="steps-grid">
-
-                    <div class="step-card">
-                        <span>01</span>
-                        <h3 data-ru="Выбираете программу"
-                            data-kz="Бағдарламаны таңдайсыз">
-                            Выбираете программу
-                        </h3>
-                    </div>
-
-                    <div class="step-card">
-                        <span>02</span>
-                        <h3 data-ru="Связываетесь с нами"
-                            data-kz="Бізбен байланысасыз">
-                            Связываетесь с нами
-                        </h3>
-                    </div>
-
-                    <div class="step-card">
-                        <span>03</span>
-                        <h3 data-ru="Наслаждаетесь праздником"
-                            data-kz="Мерекеден ләззат аласыз">
-                            Наслаждаетесь праздником
-                        </h3>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-
-    <!-- ПОДВАЛ -->
-    <footer class="footer">
-        <div class="container">
-            <a href="#home" class="logo">MAGIC WORLD</a>
-            <p>© 2026 Magic World Almaty</p>
-        </div>
-    </footer>
-
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
