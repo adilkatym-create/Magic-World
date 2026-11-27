@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap');
 
 :root {
     --background: #100d20;
@@ -13,14 +13,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-synthesis: none;
 }
 
 html {
     scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
 }
 
 body {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     background: var(--background);
     color: var(--white);
     overflow-x: hidden;
@@ -63,7 +66,9 @@ body {
 }
 
 @keyframes logoGlow {
-    to { background-position: 300%; }
+    to {
+        background-position: 300%;
+    }
 }
 
 .nav {
@@ -226,6 +231,7 @@ body {
         opacity: 0.4;
         transform: scale(0.85) rotate(-10deg);
     }
+
     50% {
         opacity: 1;
         transform: scale(1.15) rotate(12deg);
